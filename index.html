@@ -1,278 +1,182 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GeorgeTailor</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
-<link rel="icon" href="https://avatars1.githubusercontent.com/u/6958936?v=4" type="image/png"></head>
+    <link rel="icon" href="https://avatars1.githubusercontent.com/u/6958936?v=4" type="image/png">
+</head>
 
 <body>
     <div id="loading">
         <div id="spinner"></div>
     </div>
     <div id="profile">
-        <div id="profile_img" style="background: url(https://avatars.githubusercontent.com/u/6958936?s=400&u=2092646ceaf2917023ed053d60f5af0eaeb17974&v=4) center;"></div>
-        <div id="username"><span style="display:block;">Yuriy Kravets</span><a href="https://github.com/GeorgeTailor">@GeorgeTailor</a></div>
-        <div id="userbio" style="display: none;">undefined</div>
+        <div id="profile_img"
+            style="background: url(https://avatars.githubusercontent.com/u/6958936?s=400&u=2092646ceaf2917023ed053d60f5af0eaeb17974&v=4) center;">
+        </div>
+        <div id="username">
+            <span style="display:block;">Yuriy Kravets</span>
+            <a href="https://github.com/GeorgeTailor">@GeorgeTailor</a>
+        </div>
+        <div id="userbio">
+            <p>Many years of experince in backend (mostly Java and its ecosystem) and frontend (VanillaJS/Angular).
+                Worked in different branches: banking, e-commerce, software house, medical, recruiting.</p>
+            <p>Lately more interested in frontend dev stuff rather than backend.</p>
+        </div>
         <div id="about">
-                <span style="display:none;"><i class="fas fa-users"></i> &nbsp; null</span>
-                <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
-                <span style="display:none;"><i class="fas fa-link"></i> &nbsp; <a href=""></a></span>
-                <span style="display:none;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; null</span>
-                <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span></div>
+            <details>
+                <summary>Useful links</summary>
+                <ul>
+                    <li><a href="https://github.com/GeorgeTailor" target="_blank">Github</a></li>
+                    <li><a href="https://stackoverflow.com/users/2942615/yuriy-kravets" target="_blank">stackoverflow</a></li>
+                    <li><a href="https://www.linkedin.com/in/~yuriy-kravets-28762097/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </details>
+        </div>
     </div>
     <div id="display">
         <div id="work">
             <h1>Work.</h1>
             <div class="projects" id="work_section">
-                        <a href="https://github.com/GeorgeTailor/GeorgeTailor.github.io" target="_blank">
-                        <section>
-                            <div class="section_title">GeorgeTailor.github.io</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/GeorgeTailor" target="_blank">
-                        <section>
-                            <div class="section_title">GeorgeTailor</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/extjs-wc-integration" target="_blank">
-                        <section>
-                            <div class="section_title">extjs-wc-integration</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/svelte-esm" target="_blank">
-                        <section>
-                            <div class="section_title">svelte-esm</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/vue-wc-integration" target="_blank">
-                        <section>
-                            <div class="section_title">vue-wc-integration</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Vue</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/react-wc-integration" target="_blank">
-                        <section>
-                            <div class="section_title">react-wc-integration</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/angular-wc-integration" target="_blank">
-                        <section>
-                            <div class="section_title">angular-wc-integration</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TypeScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/svelte-web-components" target="_blank">
-                        <section>
-                            <div class="section_title">svelte-web-components</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/web-components-group" target="_blank">
-                        <section>
-                            <div class="section_title">web-components-group</div>
-                            <div class="about_section">
-                            <span style="display:block;">web-components-group</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/angular-web-cmp" target="_blank">
-                        <section>
-                            <div class="section_title">angular-web-cmp</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TypeScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/guitar-practise-scheduler" target="_blank">
-                        <section>
-                            <div class="section_title">guitar-practise-scheduler</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TypeScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/Simple-poll-go" target="_blank">
-                        <section>
-                            <div class="section_title">Simple-poll-go</div>
-                            <div class="about_section">
-                            <span style="display:block;">Backend for polling app in go</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Go</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/Open-Weather-Data" target="_blank">
-                        <section>
-                            <div class="section_title">Open-Weather-Data</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TypeScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/gt-heroes-hack" target="_blank">
-                        <section>
-                            <div class="section_title">gt-heroes-hack</div>
-                            <div class="about_section">
-                            <span style="display:block;">A simple bot for a popular online game.</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/gt-hole-finder" target="_blank">
-                        <section>
-                            <div class="section_title">gt-hole-finder</div>
-                            <div class="about_section">
-                            <span style="display:block;">Java application which searches web page for inputs and tries different types of attacks.</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/gt-fft-plots" target="_blank">
-                        <section>
-                            <div class="section_title">gt-fft-plots</div>
-                            <div class="about_section">
-                            <span style="display:block;">A simple python project plotting sound samples with or w/o hamming window, phase spectrum and power spectrum.</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/gt-audio-analysis" target="_blank">
-                        <section>
-                            <div class="section_title">gt-audio-analysis</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/GeorgeTailor/software-development-lab" target="_blank">
-                        <section>
-                            <div class="section_title">software-development-lab</div>
-                            <div class="about_section">
-                            <span style="display:block;">university project</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a></div>
-        </div>
-        <div id="forks" style="display:none;">
-            <h1>Forks.</h1>
-            <div class="projects" id="forks_section"></div>
-        </div>
-        <div id="blog_section">
-            <h1>Blog.</h1>
-            <div id="blogs"></div>
-        </div>
-        <div id="footer">
-            <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+                <a href="https://www.slangzone.net/" target="_blank">
+                    <section>
+                        <div class="section_title">SlangZone.net</div>
+                        <div class="about_section">
+                            Website for ukrainian slang.
+                        </div>
+                        <div class="bottom_section">
+                            <details>
+                                <summary>Backend</summary>
+                                <ul>
+                                    <li>NodeJS</li>
+                                    <li>Express</li>
+                                    <li>Postgres</li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>Frontend</summary>
+                                <ul>
+                                    <li>VanillaJS</li>
+                                    <li>ESModules</li>
+                                    <li>CSS Variables</li>
+                                    <li>Web Components</li>
+                                </ul>
+                            </details>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://demiurg.app/" target="_blank">
+                    <section>
+                        <div class="section_title">Demiurg App</div>
+                        <div class="about_section">
+                            Web application for notes and tablature edition and playback.
+                        </div>
+                        <div class="bottom_section">
+                            <details>
+                                <summary>Backend</summary>
+                                <ul>
+                                    <li>NodeJS</li>
+                                    <li>Express</li>
+                                    <li>Postgres</li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>Frontend</summary>
+                                <ul>
+                                    <li>VanillaJS</li>
+                                    <li>ESModules</li>
+                                    <li>CSS Variables</li>
+                                    <li>Web Components</li>
+                                    <li>Lots of math</li>
+                                    <li>Lots of algorithms</li>
+                                </ul>
+                            </details>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/GeorgeTailor/Open-Weather-Data" target="_blank">
+                    <section>
+                        <div class="section_title">Open-Weather-Data</div>
+                        <div class="about_section">
+                            Sample angular app which shows weather info in different locations. Some simple interactions
+                            with public API to show weather, some platform features like getting geolocation of the
+                            current user and usage of CSS custom properties.
+                        </div>
+                        <div class="bottom_section">
+                            <details>
+                                <summary>Backend</summary>
+                                <ul>
+                                    <li>Publicly available API endpoints</li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>Frontend</summary>
+                                <ul>
+                                    <li>Angular</li>
+                                    <li>Typescript</li>
+                                    <li>CSS Variables</li>
+                                </ul>
+                            </details>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://zooplus.github.io/zoo-web-components/" target="_blank">
+                    <section>
+                        <div class="section_title">Zoo web components</div>
+                        <div class="about_section">
+                            Set of extendable, reusable web-components which can be used in any modern UI framework (or
+                            without any).
+                        </div>
+                        <div class="bottom_section">
+                            <details>
+                                <summary>Frontend</summary>
+                                <ul>
+                                    <li>VanillaJS</li>
+                                    <li>VanillaCSS</li>
+                                </ul>
+                            </details>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://zooplus.github.io/zoo-web-components-docs/index.html" target="_blank">
+                    <section>
+                        <div class="section_title">Zoo web components docs</div>
+                        <div class="about_section">
+                            Documentation for zoo-web-components.
+                        </div>
+                        <div class="bottom_section">
+                            <details>
+                                <summary>Frontend</summary>
+                                <ul>
+                                    <li>VanillaJS</li>
+                                    <li>VanillaCSS</li>
+                                </ul>
+                            </details>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/GeorgeTailor/gvd-tip-of-the-day" target="_blank">
+                    <section>
+                        <div class="section_title">Discord bot for an online game server</div>
+                        <div class="about_section">
+                            Simple discord server bot for one popular online in-browser game.
+                        </div>
+                        <div class="bottom_section">
+                            <details>
+                                <summary>Tech</summary>
+                                <ul>
+                                    <li>VanillaJS</li>
+                                </ul>
+                            </details>
+                        </div>
+                    </section>
+                </a>
+            </div>
         </div>
     </div>
     <script type="text/javascript">
@@ -285,29 +189,6 @@
                 document.getElementById("loading").style.display = "none";
             }, 800);
         }, 1500);
-        $.getJSON("blog.json", function (blog) {
-            blog = blog || [];
-            if (blog.length == 0) {
-                return document.getElementById("blog_section").style.display = "none";
-            }
-            for (var i = 0; i < blog.length; i++) {
-                $("#blogs").append(`
-            <a href="./blog/${blog[i].url_title}/" target="_blank">
-                <section>
-                    <img src="${blog[i].top_image}">
-                    <div class="blog_container">
-                        <div class="section_title">${blog[i].title}</div>
-                        <div class="about_section">
-                            ${blog[i].sub_title}
-                        </div>
-                    </div>
-                </section>
-            </a>
-            `);
-            }
-        }).fail(function () {
-            return document.getElementById("blog_section").style.display = "none";
-        });
     </script>
 
     <script type="text/javascript">
@@ -319,4 +200,6 @@
     </script>
 
 
-</body></html>
+</body>
+
+</html>
