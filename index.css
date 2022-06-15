@@ -204,3 +204,38 @@ body{
     url("https://images.unsplash.com/photo-1553748024-d1b27fb3f960?w=500&h=1000&q=80&fit=crop") !important;
   }
 }
+
+@media (max-width: 800px){
+    #profile {
+        width:90vw;
+        padding:4vh 5vw;
+        height:60vh;
+        text-align:center;
+        position: relative;
+    }
+    #display {
+        width:90vw;
+        padding:4vh 5vw;
+        height:auto;
+        display:inline-block;
+        padding-left:5vw;
+    }
+    #profile_img {
+        width:120px;
+        height:120px;
+        margin:0px auto !important;
+    }
+    #work {
+        margin:0px;
+    }
+    .projects a {
+        width:100%;
+    }
+    .go_back {
+        position: relative;
+        color:var(--text-color);
+        font-size:26px;
+        margin-left:5vw;
+        top:5vh;
+    }
+}
