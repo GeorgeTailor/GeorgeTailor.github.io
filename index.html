@@ -6,190 +6,236 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GeorgeTailor</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="index.css">
     <link rel="icon" href="https://avatars1.githubusercontent.com/u/6958936?v=4" type="image/png">
+    <style>
+        :root {
+            --bg-color: rgb(10, 10, 10);
+            --text-color: #f2ebe2;
+            --background-image: linear-gradient(90deg, rgba(10, 10, 10, 0.6), rgb(10, 10, 10, 1)), url("https://images.unsplash.com/photo-1553748024-d1b27fb3f960?w=500&h=1000&q=80&fit=crop");
+        }
+
+        html {
+            background: var(--bg-color);
+        }
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin: 0;
+            padding: 3rem;
+            color: var(--text-color);
+            font-family: 'Avenir', Calibri, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+            background: var(--background-image) left top;
+            background-size: 330px auto;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }
+
+        #profile {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: left;
+            gap: 2rem;
+            font-weight: bold;
+            height: min-content;
+        }
+
+        #profile_img {
+            width: 180px;
+            height: 180px;
+            border-radius: 5px;
+            background: url(https://avatars.githubusercontent.com/u/6958936?s=400&u=2092646ceaf2917023ed053d60f5af0eaeb17974&v=4) center;
+            background-size: cover !important;
+        }
+
+        #userbio {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            font-size: 1.6rem;
+            width: 100%;
+        }
+
+        #username {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+            gap: 0.5rem;
+            justify-content: flex-end;
+            width: calc(100% - 180px - 2rem);
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: inherit;
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            height: max-content;
+            width: min-content;
+            flex-grow: 1;
+        }
+
+        #projects h1 {
+            width: 100%;
+        }
+
+        #projects section {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            border-radius: 2px;
+            border: 1px solid rgb(0, 0, 0, 0.08);
+            box-shadow: 0px 0px 0px rgb(0, 0, 0, 0);
+            background: rgb(20, 20, 20);
+            width: min-content;
+            min-width: calc(210px + 2rem);
+            flex-grow: 1;
+            gap: 1rem;
+            box-sizing: border-box;
+        }
+
+        #projects section .bottom_section {
+            margin-top: auto;
+        }
+
+        h2 {
+            font-size: 24px;
+            padding: 0px 1px;
+            word-wrap: break-word;
+            margin-top: 0;
+        }
+
+        .about_section {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        details summary {
+            cursor: pointer;
+        }
+
+        @media (max-width: 800px) {
+            body {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div id="loading">
-        <div id="spinner"></div>
-    </div>
     <div id="profile">
-        <div id="profile_img"
-            style="background: url(https://avatars.githubusercontent.com/u/6958936?s=400&u=2092646ceaf2917023ed053d60f5af0eaeb17974&v=4) center;">
-        </div>
+        <div id="profile_img"></div>
         <div id="username">
-            <span style="display:block;">Yuriy Kravets</span>
+            <span>Yuriy Kravets</span>
             <a href="https://github.com/GeorgeTailor">@GeorgeTailor</a>
         </div>
         <div id="userbio">
-            <p>Many years of experince in backend (mostly Java and its ecosystem) and frontend (VanillaJS/Angular).
-                Worked in different branches: banking, e-commerce, software house, medical, recruiting.</p>
-            <p>Lately more interested in frontend dev stuff rather than backend.</p>
+            <span>Many years of experince in backend (mostly Java and its ecosystem) and frontend (VanillaJS/Angular).
+                Worked in different branches: banking, e-commerce, medical, recruiting.</span>
+            <span>Interested in languages and working with audio.</span>
         </div>
         <div id="about">
             <details>
                 <summary>Useful links</summary>
                 <ul>
                     <li><a href="https://github.com/GeorgeTailor" target="_blank">Github</a></li>
-                    <li><a href="https://stackoverflow.com/users/2942615/yuriy-kravets" target="_blank">stackoverflow</a></li>
+                    <li><a href="https://stackoverflow.com/users/2942615/yuriy-kravets"
+                            target="_blank">stackoverflow</a></li>
                     <li><a href="https://www.linkedin.com/in/~yuriy-kravets-28762097/" target="_blank">LinkedIn</a></li>
                 </ul>
             </details>
         </div>
     </div>
-    <div id="display">
-        <div id="work">
-            <h1>Work.</h1>
-            <div class="projects" id="work_section">
-                <a href="https://www.slangzone.net/" target="_blank">
-                    <section>
-                        <div class="section_title">SlangZone.net</div>
-                        <div class="about_section">
-                            Website for ukrainian slang.
-                        </div>
-                        <div class="bottom_section">
-                            <details>
-                                <summary>Backend</summary>
-                                <ul>
-                                    <li>NodeJS</li>
-                                    <li>Express</li>
-                                    <li>Postgres</li>
-                                </ul>
-                            </details>
-                            <details>
-                                <summary>Frontend</summary>
-                                <ul>
-                                    <li>VanillaJS</li>
-                                    <li>ESModules</li>
-                                    <li>CSS Variables</li>
-                                    <li>Web Components</li>
-                                </ul>
-                            </details>
-                        </div>
-                    </section>
-                </a>
-                <a href="https://demiurg.app/" target="_blank">
-                    <section>
-                        <div class="section_title">Demiurg App</div>
-                        <div class="about_section">
-                            Web application for notes and tablature edition and playback.
-                        </div>
-                        <div class="bottom_section">
-                            <details>
-                                <summary>Backend</summary>
-                                <ul>
-                                    <li>NodeJS</li>
-                                    <li>Express</li>
-                                    <li>Postgres</li>
-                                </ul>
-                            </details>
-                            <details>
-                                <summary>Frontend</summary>
-                                <ul>
-                                    <li>VanillaJS</li>
-                                    <li>ESModules</li>
-                                    <li>CSS Variables</li>
-                                    <li>Web Components</li>
-                                    <li>Lots of math</li>
-                                    <li>Lots of algorithms</li>
-                                </ul>
-                            </details>
-                        </div>
-                    </section>
-                </a>
-                <a href="https://github.com/GeorgeTailor/Open-Weather-Data" target="_blank">
-                    <section>
-                        <div class="section_title">Open-Weather-Data</div>
-                        <div class="about_section">
-                            Sample angular app which shows weather info in different locations. Some simple interactions
-                            with public API to show weather, some platform features like getting geolocation of the
-                            current user and usage of CSS custom properties.
-                        </div>
-                        <div class="bottom_section">
-                            <details>
-                                <summary>Backend</summary>
-                                <ul>
-                                    <li>Publicly available API endpoints</li>
-                                </ul>
-                            </details>
-                            <details>
-                                <summary>Frontend</summary>
-                                <ul>
-                                    <li>Angular</li>
-                                    <li>Typescript</li>
-                                    <li>CSS Variables</li>
-                                </ul>
-                            </details>
-                        </div>
-                    </section>
-                </a>
-                <a href="https://zooplus.github.io/zoo-web-components/" target="_blank">
-                    <section>
-                        <div class="section_title">Zoo web components</div>
-                        <div class="about_section">
-                            Set of extendable, reusable web-components which can be used in any modern UI framework (or
-                            without any).
-                        </div>
-                        <div class="bottom_section">
-                            <details>
-                                <summary>Frontend</summary>
-                                <ul>
-                                    <li>VanillaJS</li>
-                                    <li>VanillaCSS</li>
-                                </ul>
-                            </details>
-                        </div>
-                    </section>
-                </a>
-                <a href="https://zooplus.github.io/zoo-web-components-docs/index.html" target="_blank">
-                    <section>
-                        <div class="section_title">Zoo web components docs</div>
-                        <div class="about_section">
-                            Documentation for zoo-web-components.
-                        </div>
-                        <div class="bottom_section">
-                            <details>
-                                <summary>Frontend</summary>
-                                <ul>
-                                    <li>VanillaJS</li>
-                                    <li>VanillaCSS</li>
-                                </ul>
-                            </details>
-                        </div>
-                    </section>
-                </a>
-                <a href="https://github.com/GeorgeTailor/gvd-tip-of-the-day" target="_blank">
-                    <section>
-                        <div class="section_title">Discord bot for an online game server</div>
-                        <div class="about_section">
-                            Simple discord server bot for one popular online in-browser game.
-                        </div>
-                        <div class="bottom_section">
-                            <details>
-                                <summary>Tech</summary>
-                                <ul>
-                                    <li>VanillaJS</li>
-                                </ul>
-                            </details>
-                        </div>
-                    </section>
+    <div id="projects">
+        <h1>Projects I've worked on</h1>
+        <section>
+            <a href="https://www.slangzone.net/" target="_blank">
+                <h2>SlangZone.net</h2>
+            </a>
+            <div class="about_section">
+                Website for ukrainian slang.
+            </div>
+            <div class="bottom_section">
+                <details>
+                    <summary>Backend</summary>
+                    <ul>
+                        <li>NodeJS</li>
+                        <li>Express</li>
+                        <li>Postgres</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Frontend</summary>
+                    <ul>
+                        <li>VanillaJS</li>
+                        <li>ESModules</li>
+                        <li>CSS Variables</li>
+                        <li>Web Components</li>
+                    </ul>
+                </details>
+            </div>
+        </section>
+        <section>
+            <a href="https://demiurg.app/" target="_blank">
+                <h2>demiurg.app</h2>
+            </a>
+            <div class="about_section">
+                Web application for notes and tablature edition and playback. Heavily relies on Web Audio API.
+            </div>
+            <div class="bottom_section">
+                <details>
+                    <summary>Backend</summary>
+                    <ul>
+                        <li>NodeJS</li>
+                        <li>Express</li>
+                        <li>Postgres</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Frontend</summary>
+                    <ul>
+                        <li>VanillaJS</li>
+                        <li>ESModules</li>
+                        <li>CSS Variables</li>
+                        <li>Web Components</li>
+                        <li>Lots of math</li>
+                        <li>Lots of algorithms</li>
+                    </ul>
+                </details>
+            </div>
+        </section>
+        <section>
+            <a href="https://zooplus.github.io/zoo-web-components/" target="_blank">
+                <h2 class="section_title">Zoo web components</h2>
+            </a>
+            <div class="about_section">
+                Set of extendable, reusable web-components which can be used in any modern UI framework (or
+                without any). <a href="https://zooplus.github.io/zoo-web-components-docs/index.html" target="_blank">
+                    Link to docs.
                 </a>
             </div>
-        </div>
+            <div class="bottom_section">
+                <details>
+                    <summary>Frontend</summary>
+                    <ul>
+                        <li>VanillaJS</li>
+                        <li>VanillaCSS</li>
+                    </ul>
+                </details>
+            </div>
+        </section>
     </div>
-    <script type="text/javascript">
-        setTimeout(function () {
-            document.getElementById("loading").classList.add("animated");
-            document.getElementById("loading").classList.add("fadeOut");
-            setTimeout(function () {
-                document.getElementById("loading").classList.remove("animated");
-                document.getElementById("loading").classList.remove("fadeOut");
-                document.getElementById("loading").style.display = "none";
-            }, 800);
-        }, 1500);
-    </script>
 
     <script type="text/javascript">
         if ('serviceWorker' in navigator) {
@@ -198,8 +244,6 @@
             });
         }
     </script>
-
-
 </body>
 
 </html>
